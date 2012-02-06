@@ -9,3 +9,14 @@
 3.  learned from test_slicing_with_ranges
 	array = [:peanut, :butter, :and, :jelly]
 	assert_equal [:and,:jelly], array[2..-1]
+
+4. learned from test_accessing_hashes_with_fetch
+	hash.fetch(:doesntexist) returns an IndexError 
+	whereas hash[:doesntexist] returns nil
+
+5. learned from test_combining_hashes
+	hash.merge(some hash) does not modify hash, the old hash
+	
+6. learned form test_default_value
+	Hash.new("dos") sets the default value from nil to "dos"
+	
